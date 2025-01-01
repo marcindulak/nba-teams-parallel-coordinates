@@ -3,6 +3,8 @@
 Visually analyze the NBA teams statistics using parallel coordinates plot.
 This is used for example to analyze the impact of 2pt vs 3pt shot frequency on the total score.
 
+The visualization is available at https://marcindulak.github.io/nba-teams-parallel-coordinates
+
 ## Obtain data from NBA.com
 
 **Note** that a copy of the data is already included in this repository.
