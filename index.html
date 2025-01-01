@@ -1065,6 +1065,8 @@
       };
 
       const layout = {
+        // plotly.js does not support hover info for parcoords https://github.com/plotly/plotly.js/issues/7016
+        // Use dynamic annotations as a workaround.
         annotations: [
           // Only W and +/- annotations on the very left and right axes are supported.
           // If you mouse move axes, the annotations won't follow and will be incorrect.
