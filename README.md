@@ -1,9 +1,40 @@
 # NBA teams statistics parallel coordinates plot
 
 Visually analyze the NBA teams statistics using parallel coordinates plot.
-This is used for example to analyze the impact of 2pt vs 3pt shot frequency on the total score.
+For example, analyze the impact of 2pt vs 3pt shot frequency on the number of wins in the season.
 
 The visualization is available at https://marcindulak.github.io/nba-teams-parallel-coordinates
+
+## Example usage of the parallel coordinate plot
+
+The screencast below uses a feature of parallel coordinates called brushing.
+Brushing highlights a group of lines while fading out all the others.
+
+Various observations can be made with the help of brushing.
+
+- In the mid 90's to mid 00's teams were making less 3-pointers (`3PM`), compared to mid 10's and 20's.
+  The average number of 3-pointers made per game increased from about 10 to 17, respectively.
+  The number of points per game (`PTS`) also increased, by roughly 10 points.
+
+- In the recent years, the association between making more 3-pointers and winning more games (`W`) is more pronounced.
+
+Another interactive feature of parallel coordinates plots, shown on the screencast, is the ability to rearrange the axis.
+
+- Moving the `FTM` (free-throws made) axis between `W` and `PTS` results in a number of crossing lines.
+  On a parallel coordinates plot, this is an indication of a negative correlation - some teams that make many free-throws (they get fouled often) score less points and win less games.
+
+![parallel-coordinates-plot-usage.git](./parallel-coordinates-plot-usage.gif)
+
+The animated gif, as the one above, can be created from a screen recording, using the command below.
+
+```shell
+ffmpeg -i parallel-coordinates-plot-usage.mov -vf "fps=2,scale=1024:-1" -c:v gif parallel-coordinates-plot-usage.gif
+```
+
+For more examples of analyzing data with parallel coordinates see the
+[Kai Chang - Visually Exploring Multidimensional Data - 2013](https://www.youtube.com/watch?v=ypc7Ul9LkxA)
+and
+[Parallel Coordinates: Visual Multidimensional Geometry and its Applications - 2016 - Alfred Inselberg](https://www.youtube.com/watch?v=aTkzWEB14Lo) talks.
 
 ## Obtain data from NBA.com
 
