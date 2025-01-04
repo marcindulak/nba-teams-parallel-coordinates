@@ -3,7 +3,12 @@
 Visually analyze the NBA teams statistics using parallel coordinates plot.
 For example, analyze the impact of 2pt vs 3pt shot frequency on the number of wins in the season.
 
-The visualization is available at https://marcindulak.github.io/nba-teams-parallel-coordinates
+> The interactive visualization is available at
+  [https://marcindulak.github.io/nba-teams-parallel-coordinates](https://marcindulak.github.io/nba-teams-parallel-coordinates).
+  You can open the link in a browser, no login is required.
+
+The code uses [plotly.js](https://plotly.com/javascript/parallel-coordinates-plot/),
+and is confined to [index.html](./index.html) file.
 
 ## Example usage of the parallel coordinate plot
 
